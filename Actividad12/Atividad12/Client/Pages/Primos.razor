@@ -1,0 +1,43 @@
+﻿@page "/primos"
+<h3>Primos</h3>
+
+<label>Numero </label>
+<br />
+<input type="number" @bind-value="num" class="form-control form-control-sm" />
+<br />
+<button @onclick="Calcular" class="btn btn-primary">Generar primos</button>
+
+<h4>Numeros primos</h4>
+<ul>
+    @foreach (var i in primos)
+    {
+        <li>@i</li>
+    }
+</ul>
+
+@code {
+    public int num = 0;
+    public List<int> primos = new List<int>();
+
+    private void Calcular()
+    {
+        primos.Clear();
+
+        if (num <= 1) return;
+
+        bool[] noPrimos = new bool[num + 1];
+
+        for (int i = 2; i <= num; i++)
+        {
+            if (!noPrimos[i])
+            {
+                primos.Add(i);
+
+                for (int j = i * 2; j <= num; j += i)
+                {
+                    noPrimos[j] = true;
+                }
+            }
+        }
+    }
+}

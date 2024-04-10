@@ -1,0 +1,12 @@
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\bin\Debug\net6.0\Atividad12.Shared.deps.json
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\bin\Debug\net6.0\Atividad12.Shared.dll
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\bin\Debug\net6.0\Atividad12.Shared.pdb
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.csproj.AssemblyReference.cache
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.AssemblyInfoInputs.cache
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.AssemblyInfo.cs
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.csproj.CoreCompileInputs.cache
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.dll
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\refint\Atividad12.Shared.dll
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\Atividad12.Shared.pdb
+C:\Users\ed172\source\repos\Atividad12\Atividad12\Shared\obj\Debug\net6.0\ref\Atividad12.Shared.dll

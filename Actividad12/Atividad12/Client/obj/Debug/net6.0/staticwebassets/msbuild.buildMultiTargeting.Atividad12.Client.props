@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Atividad12.Client.props" />
+</Project>
