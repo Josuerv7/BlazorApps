@@ -1,0 +1,41 @@
+﻿body {
+
+}
+fieldset {
+    margin-left: 0px;
+    border: 0px;
+    border-radius:12px;
+    background-color: lightcyan;
+}
+.container1 {
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: lightcyan;
+    width: 250px;
+    height: 390px;
+    position: fixed;
+    top: 190px;
+    left: 270px;
+}
+.container2 {
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: lightcyan;
+    width: 250px;
+    height: 390px;
+    position: fixed;
+    top: 190px;
+    left: 570px;
+}
+
+.container3 {
+    border: 1px solid gray;
+    border-radius: 15px;
+    background-color: lightcyan;
+    width: 250px;
+    height: 500px;
+    position: fixed;
+    top: 190px;
+    left: 870px;
+}
+    
