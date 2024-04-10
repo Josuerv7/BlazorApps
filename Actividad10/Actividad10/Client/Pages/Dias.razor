@@ -1,0 +1,43 @@
+﻿@page "/dias"
+
+<h3>Conocer los dias del mes</h3>
+<div>
+    <label>Mes <input type="number" @bind-value="mes" /></label><br />
+    <label>Año <input type="number" @bind-value="año" /></label><br /><br />
+</div>
+
+
+<div>
+    <button @onclick="Obtener" class="btn btn-primary">Calcular</button><br />
+    <label class="col-sm-2 col-form-label">El mes @mes del año @año tiene @numDias dias</label>
+</div>
+
+
+@code {
+    public int mes = 0;
+    public int año = 0;
+    public int? numDias;
+
+    private void Obtener()
+    {
+        if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12)
+        {
+            numDias = 31;
+        }
+        else if (mes == 4 || mes == 6 || mes == 9 || mes == 11)
+        {
+            numDias = 30;
+        }
+        else if (mes == 2)
+        {
+            if ((año % 4 == 0 && año % 100 != 0) || año % 400 == 0)
+            {
+                numDias = 29;
+            }
+            else
+            {
+                numDias = 28;
+            }
+        }
+    }
+}

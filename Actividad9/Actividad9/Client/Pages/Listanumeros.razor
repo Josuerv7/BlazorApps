@@ -1,0 +1,70 @@
+﻿@page "/listanumeros"
+<base href="/" />
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="css/app.css" rel="stylesheet" />
+<link href="Actividad9.Client.styles.css" rel="stylesheet" />
+
+<PageTitle>Lista de numeros</PageTitle>
+
+
+<div class="container">
+    <h2>Lista de numeros</h2>
+</div>
+
+<div><label>Número 1 <input type="number" class="form-control" @bind="inicio" /></label></div>
+<div><label>Número 2<input type="number" class="form-control" @bind="fin" /></label></div>
+<br>
+<button type="button" class="btn btn-success" @onclick=calcular>Calcular</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>Pares</th>
+            <th>Impares</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (!string.IsNullOrEmpty(resultado) && !string.IsNullOrEmpty(resultado2))
+        {
+            var pares = resultado.Split(',');
+            var impares = resultado2.Split(',');
+
+            for (int i = 0; i < Math.Max(pares.Length, impares.Length); i++)
+            {
+                <tr>
+                    <td>@(i < pares.Length ? pares[i] : "")</td>
+                    <td>@(i < impares.Length ? impares[i] : "")</td>
+                </tr>
+            }
+        }
+    </tbody>
+</table>
+
+@code {
+    private int inicio = 0;
+    private int fin = 0;
+    private string resultado = "";
+    private string resultado2 = "";
+
+    private void calcular()
+    {
+        resultado = "";
+        resultado2 = "";
+
+        for (int i = inicio; i <= fin; i++)
+        {
+            if (i % 2 == 0)
+            {
+                resultado += i + ",";
+            }
+            else
+            {
+                resultado2 += i + ",";
+            }
+        }
+
+        resultado = resultado.TrimEnd(',');
+        resultado2 = resultado2.TrimEnd(',');
+    }
+}

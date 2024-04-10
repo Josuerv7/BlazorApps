@@ -1,0 +1,12 @@
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\bin\Debug\net6.0\Actividad9.Shared.deps.json
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\bin\Debug\net6.0\Actividad9.Shared.dll
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\bin\Debug\net6.0\Actividad9.Shared.pdb
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.csproj.AssemblyReference.cache
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.AssemblyInfoInputs.cache
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.AssemblyInfo.cs
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.csproj.CoreCompileInputs.cache
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.dll
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\refint\Actividad9.Shared.dll
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\Actividad9.Shared.pdb
+C:\Users\josue\source\repos\Actividad9\Actividad9\Shared\obj\Debug\net6.0\ref\Actividad9.Shared.dll

@@ -1,0 +1,68 @@
+﻿@page "/numprimos"
+<base href="/" />
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="css/app.css" rel="stylesheet" />
+<link href="Actividad9.Client.styles.css" rel="stylesheet" />
+
+<PageTitle>Numeros Primos</PageTitle>
+
+
+<div class="container">
+    <h2>Numeros Primos</h2>
+</div>
+<div class="form-group row">
+    <label class="col-sm-2 col-form-label"> Número Entero </label>
+    <div class="col-sm-10">
+        <input type="number" class="form-control" placeholder="0" @bind-value="@num">
+    </div>
+</div>
+<br>
+
+<button class="btn btn-success" @onclick="OnInitialized">Generar Primos</button>
+<br>
+
+<div style="display:flex">
+    @if (numerosPrimos.Any())
+    {
+        <div style="padding: 20px">
+            <h3>Números Primos.</h3>
+            <table class="table table-striped">
+                <tbody>
+                    @foreach (var primo in numerosPrimos)
+                    {
+                        <tr>
+                            <td class="form-control">@primo</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>
+
+
+@code {
+    private int num = 0;
+    private List<int> numerosPrimos = new List<int>();
+
+    protected override void OnInitialized()
+    {
+        numerosPrimos.Clear();
+        for (int i = 2; i <= num; i++)
+        {
+            bool SPrimo = true;
+            for (int j = 2; j < i; j++)
+            {
+                if (i % j == 0)
+                {
+                    SPrimo = false;
+                    break;
+                }
+            }
+            if (SPrimo)
+            {
+                numerosPrimos.Add(i);
+            }
+        }
+    }
+}

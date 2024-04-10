@@ -1,0 +1,34 @@
+﻿@page "/cambiomoneda"
+<base href="/" />
+<link href="css/bootstrap/bootstrap.min.css" rel="stylesheet" />
+<link href="css/app.css" rel="stylesheet" />
+<link href="Actividad9.Client.styles.css" rel="stylesheet" />
+
+<PageTitle>Cambio de moneda</PageTitle>
+
+
+<div class="container">
+    <h2>Cambio de moneda</h2>
+</div>
+<div><label>Pesos: <input type="number" @bind="Pesos" /></label></div>
+<br><button type="button" class="btn btn-success" @onclick=convertir>Calcular</button>
+<br>
+<div><label>Dolares: <input readonly type="text" class="form-control" @bind="Dolares" /></label></div>
+<div><label>Euros: <input readonly type="text" class="form-control" @bind="Euros" /></label></div>
+<div><label>Libras: <input readonly type="text" class="form-control" @bind="Libras" /></label></div>
+
+@code {
+    private float Pesos = 0;
+    private float Dolares = 0;
+    private float Euros = 0;
+    private float Libras = 0;
+
+
+    private void convertir()
+    {
+        Dolares = Pesos / 18;
+        Euros = Pesos / 19;
+        Libras = Pesos / 22;
+
+    }
+}

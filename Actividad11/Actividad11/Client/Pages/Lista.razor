@@ -1,0 +1,68 @@
+﻿@page "/lista"
+
+<h3>Lista</h3>
+<div>
+    <label>Numero 1</label>
+    <input type="number" @bind-value="num1" class="form-control form-control-sm" />
+    <label>Numero 2 </label><br />
+    <input type="number" @bind-value="num2" class="form-control form-control-sm" /><br />
+    <button @onclick="Calcular" class="btn btn-primary">Calcular</button>
+</div>
+
+<style>
+    .div {
+        box-sizing: border-box;
+        width: 50%;
+        height: 100vh;
+        float: left;
+    }
+</style>
+
+
+<div class="div">
+    <h4>Pares</h4>
+    <ul>
+        @foreach (var i in pares)
+        {
+            <li>@i</li>
+        }
+    </ul>
+</div>
+
+<div class="div">
+    <h4>Impares</h4>
+    <ul>
+        @foreach (var i in impares)
+        {
+            <li>@i</li>
+        }
+    </ul>
+</div>
+
+@code {
+    public int num1 = 0;
+    public int num2 = 0;
+    public List<int> pares = new List<int>();
+    public List<int> impares = new List<int>();
+
+    private void Calcular()
+    {
+        pares.Clear();
+        impares.Clear();
+
+        int menor = Math.Min(num1, num2);
+        int mayor = Math.Max(num1, num2);
+
+        for (int i = menor; i <= mayor; i++)
+        {
+            if (i % 2 == 0)
+            {
+                pares.Add(i);
+            }
+            else
+            {
+                impares.Add(i);
+            }
+        }
+    }
+}
